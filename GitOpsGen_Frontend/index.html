@@ -1,0 +1,37 @@
+<!doctype html>
+<!-- Indique que le document utilise HTML5 -->
+<html lang="en">
+  <!-- Spécifie que le contenu est en anglais. Important pour l'accessibilité et les moteurs de recherche -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Définit l'encodage des caractères à UTF-8, pour supporter tous les caractères (accents, symboles, etc.) -->
+
+    <link rel="icon" href="/favicon.ico" />
+    <!-- L'icône affichée dans l'onglet du navigateur -->
+
+    <meta name="theme-color" content="#000000" />
+    <!-- Définit la couleur du thème pour les navigateurs mobiles (barre du haut). Ici, c’est noir -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Rend la page responsive : adapte l’affichage à la taille de l’écran (mobile, tablette, desktop) -->
+
+    <title>Plateforme Web de Génération de Configuration Kubernetes/GitOps</title>
+    <!-- Le titre de la page affiché dans l'onglet du navigateur -->
+  </head>
+
+  <body>
+    <!-- Le corps principal de la page HTML -->
+
+    <div id="root"></div>
+    <!-- React va injecter toute l'application ici.
+         C’est ce qu’on appelle le "point de montage" de l’app React.
+         Le code React va remplacer ce div avec tout le contenu dynamique. -->
+
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- Charge le fichier principal de l’application React (en TypeScript ici).
+         C’est ici que React est initialisé avec ReactDOM.createRoot(...).
+         L’attribut type="module" permet d’utiliser l’import/export ES6 dans le fichier. -->
+
+  </body>
+</html>
